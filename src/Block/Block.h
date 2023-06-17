@@ -16,7 +16,7 @@ namespace myblockchain {
 
 class Block {
 public:
-	Block(std::string data, uint8_t prevBlockHash);
+	Block(std::string data, std::string prevBlockHash);
 	~Block();
 
 	void setHash(Block& block);
