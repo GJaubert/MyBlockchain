@@ -7,9 +7,12 @@
 //============================================================================
 
 #include <iostream>
-using namespace std;
+#include "Block/Block.h"
+
+using namespace myblockchain;
 
 int main() {
-	cout << "!!!Hello Worasdasd!!!" << endl; // prints !!!Hello World!!!
+
+	std::cout << "Finished"  << std::endl;
 	return 0;
 }
