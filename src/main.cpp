@@ -13,6 +13,7 @@ using namespace myblockchain;
 
 int main() {
 
+	Block block("Genesis Block", "");
 	std::cout << "Finished"  << std::endl;
 	return 0;
 }

@@ -11,6 +11,8 @@
 #include <cstdint>
 #include <string>
 #include <ctime>
+#include <iostream>
+#include "../utils/SHA256/SHA256.h"
 
 namespace myblockchain {
 
