@@ -39,7 +39,6 @@ void Block::setHash(Block& block) {
 	sha.update(headers);
 	uint8_t* digest = sha.digest();
 	block.m_hash = SHA256::toString(digest);
-	std::cout << block.m_hash << std::endl;
 	delete[] digest;
 }
 

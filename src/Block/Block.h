@@ -25,7 +25,7 @@ public:
 	void setHash(Block& block);
 	std::string getHash();
 
-private:
+//private:
 	long long m_timestamp;
 	std::string m_data;
 	std::string m_prevBlockHash;

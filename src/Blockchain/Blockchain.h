@@ -18,8 +18,8 @@ public:
 	Blockchain();
 	~Blockchain();
 	void AddBlock(std::string data);
-private:
 	std::vector<Block*> blocks;
+private:
 	Block* newGenesisBlock();
 };
 
