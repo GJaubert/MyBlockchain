@@ -7,13 +7,15 @@
 //============================================================================
 
 #include <iostream>
-#include "Block/Block.h"
+
+#include "Blockchain/Blockchain.h"
 
 using namespace myblockchain;
 
 int main() {
 
-	Block block("Genesis Block", "");
+	Blockchain bc;
+
 	std::cout << "Finished"  << std::endl;
 	return 0;
 }

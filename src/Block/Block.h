@@ -19,9 +19,11 @@ namespace myblockchain {
 class Block {
 public:
 	Block(std::string data, std::string prevBlockHash);
+	Block(Block& other);
 	~Block();
 
 	void setHash(Block& block);
+	std::string getHash();
 
 private:
 	long long m_timestamp;

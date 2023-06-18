@@ -16,6 +16,17 @@ Block::Block(std::string data, std::string prevBlockHash): m_hash("") {
 	setHash(*this);
 }
 
+Block::Block(Block& other) {
+	m_timestamp = other.m_timestamp;
+	m_data = other.m_data;
+	m_prevBlockHash = other.m_prevBlockHash;
+	m_hash = other.m_hash;
+}
+
+std::string Block::getHash() {
+	return m_hash;
+}
+
 Block::~Block() {
 	// TODO Auto-generated destructor stub
 }
