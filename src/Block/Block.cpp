@@ -27,9 +27,7 @@ std::string Block::getHash() {
 	return m_hash;
 }
 
-Block::~Block() {
-	// TODO Auto-generated destructor stub
-}
+Block::~Block() {}
 
 void Block::setHash(Block& block) {
 	std::string timestamp = std::to_string(block.m_timestamp);
