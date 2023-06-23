@@ -26,7 +26,7 @@ Block::Block(Block& other) {
 std::string Block::getHash() {
 	return m_hash;
 }
-
+//
 Block::~Block() {}
 
 void Block::setHash(Block& block) {
