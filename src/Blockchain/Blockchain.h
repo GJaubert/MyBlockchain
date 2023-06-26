@@ -9,6 +9,7 @@
 #define BLOCKCHAIN_BLOCKCHAIN_H_
 
 #include "../Block/Block.h"
+#include "../ProofOfWork/ProofOfWork.h"
 #include <vector>
 
 namespace myblockchain {

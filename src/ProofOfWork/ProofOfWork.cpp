@@ -10,9 +10,10 @@
 namespace myblockchain {
 
 ProofOfWork::ProofOfWork(Block* block): m_block(block) {
-	long long tmp_target = 1ULL << 64;
+	long long tmp_target = 1LL << 64;
 	tmp_target = tmp_target << (unsigned int)(256 - TARGET_BITS);
 	target = &tmp_target;
+	std::cout << "too easy: " << *target;
 }
 
 std::string ProofOfWork::prepareData(int nonce) {
