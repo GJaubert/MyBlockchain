@@ -10,8 +10,8 @@
 namespace myblockchain {
 
 ProofOfWork::ProofOfWork(Block* block): m_block(block) {
-	long long int tmp_target = 1;
-	tmp_target = tmp_target << (256 - TARGET_BITS);
+	long long tmp_target = 1ULL << 64;
+	tmp_target = tmp_target << (unsigned int)(256 - TARGET_BITS);
 	target = &tmp_target;
 }
 
@@ -25,10 +25,10 @@ std::string ProofOfWork::prepareData(int nonce) {
 	stream << std::hex << m_block->getTimestamp();
 	std::cout << stream.str();
 	data = data + stream.str();
-	stream << std::hex << (long long int) TARGET_BITS;
+	stream << std::hex << (long long) TARGET_BITS;
 	std::cout << stream.str();
 	data = data + stream.str();
-	stream << std::hex << (long long int) nonce;
+	stream << std::hex << (long long) nonce;
 	std::cout << stream.str();
 	data = data + stream.str();
 
