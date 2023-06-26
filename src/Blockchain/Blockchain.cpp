@@ -23,6 +23,7 @@ void Blockchain::AddBlock(std::string data) {
 	Block prevBlock(*blocks[blocks.size() - 1]);
 	Block* newBlock = new Block(data, prevBlock.getHash());
 	blocks.push_back(newBlock);
+	//For debugging
 	ProofOfWork pow(newBlock);
 }
 

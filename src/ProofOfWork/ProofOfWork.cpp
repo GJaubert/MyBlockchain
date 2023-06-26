@@ -9,11 +9,14 @@
 
 namespace myblockchain {
 
+//Necesita ser depurado
 ProofOfWork::ProofOfWork(Block* block): m_block(block) {
-	long long tmp_target = 1LL << 64;
+	unsigned long long tmp_target = 1ULL << 63;
+	std::cout << "too easy: " << tmp_target << std::endl;
+	// depurar este paso
 	tmp_target = tmp_target << (unsigned int)(256 - TARGET_BITS);
+	std::cout << "temp_target: " << tmp_target << std::endl;
 	target = &tmp_target;
-	std::cout << "too easy: " << *target;
 }
 
 std::string ProofOfWork::prepareData(int nonce) {

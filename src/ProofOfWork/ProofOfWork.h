@@ -19,7 +19,7 @@ const int TARGET_BITS = 24;
 class ProofOfWork {
 private:
 	Block* m_block;
-	long long* target;
+	unsigned long long* target;
 
 	std::string prepareData(int nonce);
 public:
