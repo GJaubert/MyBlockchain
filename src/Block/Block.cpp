@@ -27,6 +27,17 @@ std::string Block::getHash() {
 	return m_hash;
 }
 
+std::string Block::getData() {
+	return m_data;
+}
+long long Block::getTimestamp() {
+	return m_timestamp;
+}
+
+std::string Block::getPrevBlockHash() {
+	return m_prevBlockHash;
+}
+
 Block::~Block() {}
 
 void Block::setHash(Block& block) {

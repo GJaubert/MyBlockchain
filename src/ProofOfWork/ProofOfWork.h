@@ -9,6 +9,7 @@
 #define PROOFOFWORK_PROOFOFWORK_H_
 
 #include <string>
+#include <iomanip>
 #include "../Block/Block.h"
 
 namespace myblockchain {
@@ -18,7 +19,7 @@ const int TARGET_BITS = 24;
 class ProofOfWork {
 private:
 	Block* m_block;
-	long int* target;
+	long long int* target;
 
 	std::string prepareData(int nonce);
 public:
