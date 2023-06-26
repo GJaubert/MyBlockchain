@@ -8,18 +8,21 @@
 #ifndef PROOFOFWORK_PROOFOFWORK_H_
 #define PROOFOFWORK_PROOFOFWORK_H_
 
+#include <string>
 #include "../Block/Block.h"
 
 namespace myblockchain {
 
+const int TARGET_BITS = 24;
+
 class ProofOfWork {
 private:
-	int m_targetBits;
 	Block* m_block;
 	long int* target;
+
+	std::string prepareData(int nonce);
 public:
-	ProofOfWork();
-	ProofOfWork(int targetBits);
+	ProofOfWork(Block* block);
 };
 
 } /* namespace myblockchain */

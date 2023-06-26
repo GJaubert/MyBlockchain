@@ -9,9 +9,13 @@
 
 namespace myblockchain {
 
-ProofOfWork::ProofOfWork(): m_targetBits(0) {}
+ProofOfWork::ProofOfWork(Block* block): m_block(block) {
+	target = (long int) 1;
+	target = target << (256 - TARGET_BITS);
+}
 
-ProofOfWork::ProofOfWork(int targetBits): m_targetBits(targetBits) {}
+std::string ProofOfWork::prepareData(int nonce) {
 
+}
 
 } /* namespace myblockchain */
