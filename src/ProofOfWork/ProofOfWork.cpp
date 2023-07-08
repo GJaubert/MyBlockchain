@@ -11,10 +11,9 @@ namespace myblockchain {
 
 //Necesita ser depurado
 ProofOfWork::ProofOfWork(Block* block): m_block(block) {
-	unsigned long long tmp_target = 1ULL << 63;
-	std::cout << "too easy: " << tmp_target << std::endl;
-	// depurar este paso
-	tmp_target = tmp_target << (unsigned int)(256 - TARGET_BITS);
+	boost::multiprecision::mpz_int one(1);
+	// Buscar error: fatal error: gmp.h: No such file or directory
+	unsigned long long tmp_target = (one << (unsigned int)(256 - TARGET_BITS));
 	std::cout << "temp_target: " << tmp_target << std::endl;
 	target = &tmp_target;
 }
