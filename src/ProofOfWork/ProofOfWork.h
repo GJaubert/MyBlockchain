@@ -31,4 +31,4 @@ public:
 
 #endif /* PROOFOFWORK_PROOFOFWORK_H_ */
 
-//
+//as
