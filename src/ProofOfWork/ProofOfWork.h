@@ -30,3 +30,5 @@ public:
 } /* namespace myblockchain */
 
 #endif /* PROOFOFWORK_PROOFOFWORK_H_ */
+
+//comment
