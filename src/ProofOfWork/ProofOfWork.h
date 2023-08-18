@@ -10,7 +10,6 @@
 
 #include <string>
 #include <iomanip>
-#include <boost/multiprecision/gmp.hpp>
 #include "../Block/Block.h"
 
 namespace myblockchain {
