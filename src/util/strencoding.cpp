@@ -1,15 +1,15 @@
 /*
- * blaseblob.cpp
+ * strencoding.cpp
  *
- *  Created on: 18 ago 2023
+ *  Created on: 19 ago 2023
  *      Author: Rikus
  */
 
-#include "blaseblob.h"
+#include "strencoding.h"
 
 namespace myblockchain {
 
-blase_blob::blase_blob() {
+strencoding::strencoding() {
 	// TODO Auto-generated constructor stub
 
 }
